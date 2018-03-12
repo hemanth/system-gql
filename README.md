@@ -1,7 +1,11 @@
 ## [system-gql](https://github.com/hemanth/system-gql).
 > A graphql interface to query system information [WIP]
 
-![system-gql](./snap.png)
+<img src="./snap.png" alt="system-gql" style="
+    max-width: 100%;
+    display:block;
+    height: auto;
+">
 
 ## DEMO
 Feel free to poke with the [DEMO](https://system-gql.now.sh/graphiql?query=%7B%0A%20%20info%20%7B%0A%20%20%20os%20%7B%0A%20%20%20%20%20arch%0A%20%20%20%20%20type%0A%20%20%20%20%20release%0A%20%20%20%20%20hostname%0A%20%20%20%7D%0A%20%20cpus%20%7B%0A%20%20%20%20model%0A%20%20%20%20speed%0A%20%20%20%20count%0A%20%20%7D%0A%20%20%7D%0A%7D)

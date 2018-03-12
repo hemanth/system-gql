@@ -7,6 +7,9 @@ const schema = require('./schema')
 const {readFileSync} = require('fs')
 const marked = require('marked')
 const app = express()
+const path = require('path')
+
+app.use(express.static(path.join(__dirname, '.')));
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({schema}))
 
