@@ -3,9 +3,18 @@ const resolvers = require('./resolvers')
 
 // Define your types here.
 const typeDefs = `
+  type Query {
+    info(filter: sysFilter): SystemInfo
+  }
+
+  input sysFilter {
+    name: String!
+  }
+
   type SystemInfo {
     cpus: CPU
     os: OS
+    mem: MEM
   }
 
   type CPU {
@@ -21,12 +30,9 @@ const typeDefs = `
     hostname: String
   }
 
-  type Query {
-    info(filter: sysFilter): SystemInfo
-  }
-
-  input sysFilter {
-    name: String!
+  type MEM {
+    free: String,
+    total: String
   }
 `
 

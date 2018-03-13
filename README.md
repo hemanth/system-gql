@@ -44,6 +44,7 @@ Port will be picked up from `process.env.SYSQL` or defaults to `3333`
 ## TODO
 
 * Add more fields to the schema.
+* Implement generic filters.
 * Add default query to the editor.
 
 ## License
