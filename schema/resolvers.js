@@ -1,11 +1,12 @@
-const util = require("./util")
+const utils = require("./utils")
 module.exports = {
   Query: {
     info: (root, {filter}) => {
+  console.log(utils.mem());
       return {
-        cpus: util.cpus(),
-        os: util.os(),
-        mem: util.mem()
+        cpus: utils.cpus(),
+        os: utils.os(),
+        mem: utils.mem()
       };
     }
   }
